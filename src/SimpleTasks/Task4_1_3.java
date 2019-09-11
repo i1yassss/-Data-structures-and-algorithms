@@ -37,6 +37,7 @@ public class Task4_1_3 {
         }
         printStack(stack);
     }
+
     private static void printStack(Stack<Integer> s) {
         int _k = 0;
         while (!s.isEmpty()){
@@ -49,7 +50,6 @@ public class Task4_1_3 {
         }
 
     }
-
 
 }
 

@@ -1,7 +1,5 @@
 package QuickSort;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 /*
@@ -33,12 +31,13 @@ public class QuickSort {
 
     }
 
-
     // откуда сортируем и докуда
     static int[] qsort(int l, int r, int[] a) {
+
         if (l >= r) {
             return a;
         }
+
         int i = l;
         int j = r;
         int middle = i - (i - j) / 2;

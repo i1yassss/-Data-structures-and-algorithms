@@ -15,14 +15,13 @@ import java.util.*;
  */
 
 public class PointsAndSegments {
+
     static BufferedReader sc;
     static StringTokenizer tok;
 
     static int scanInt() throws IOException {
         return Integer.parseInt(scanString());
     }
-
-
 
     static String scanString() throws IOException {
         while (tok == null || !tok.hasMoreTokens()) {
@@ -52,8 +51,10 @@ public class PointsAndSegments {
             points[i] = scanInt();
         }
         //Collections.sort(segment, compareLeft);
+        //Collections.sort(segment, compareLeft);
         for (int i = 0; i < m; i++) {
             int k = 0;
+            // O(m) * O(n)
             for (Segments segments : segment) {
 
                 if (segments.getA() <= points[i] && segments.getB() >= points[i])
@@ -64,5 +65,4 @@ public class PointsAndSegments {
         }
         System.out.println("");
     }
-    //Collections.sort(segment, compareLeft);
 }
